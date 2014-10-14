@@ -1,0 +1,233 @@
+set nocompatible
+
+set encoding=utf-8
+
+" this is broken for some reason, sometimes goes one way, sometimes another..
+if has('win32') || has('win64')
+    let $VIMHOME = $HOME."/vimfiles"
+else
+    let $VIMHOME = $HOME."/.vim"
+    "let $VIMHOME = $HOME."/vimfiles"
+endif
+
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/macros/matchit.vim
+
+set viminfo+=n$VIMHOME/viminfo
+
+if exists("+undofile")
+	" undofile - This allows you to use undos after exiting and restarting
+	" This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
+	" :help undo-persistence
+	" This is only present in 7.3+
+	if isdirectory($VIMHOME . '/undo') == 0
+		:silent !mkdir -p $VIMHOME/undo > /dev/null 2>&1
+	endif
+	set undodir=./.vim-undo//
+	set undodir+=$VIMHOME/undo//
+	set undofile
+endif
+
+set rtp+=$VIMHOME/bundle/Vundle.vim/
+
+" must be disabled before vundle
+filetype off
+
+call vundle#begin("$VIMHOME/bundle")
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'DfrankUtil'
+Plugin 'vimprj'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tomasr/molokai'
+Plugin 'dhruvasagar/vim-vinegar'
+Plugin 'rking/ag.vim'
+
+" change/add surrounding characters
+Plugin 'tpope/vim-surround'
+" word manipulation
+Plugin 'tpope/vim-abolish'
+" repeat last command for supported plugins
+Plugin 'tpope/vim-repeat'
+" comment section of code
+Plugin 'tpope/vim-commentary'
+" tmux-like navigation
+Plugin 'christoomey/vim-tmux-navigator'
+" allow using different syntaxes in a single file
+Plugin 'vim-scripts/SyntaxRange'
+" allow f F t T ; to work across lines
+Plugin 'dahu/vim-fanfingtastic'
+" easy buffer manipulation
+Plugin 'fholgado/minibufexpl.vim'
+
+" git
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'int3/vim-extradite'
+
+" puppet-related
+Plugin 'puppetlabs/puppet-syntax-vim'
+
+" php-related
+Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'beyondwords/vim-twig'
+
+" web-related
+Plugin 'tpope/vim-haml'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'wavded/vim-stylus'
+
+" snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+" erlang
+Plugin 'jimenezrick/vimerl'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'carlosgaldino/elixir-snippets'
+
+" various syntax validation
+Plugin 'scrooloose/syntastic'
+
+" markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set showcmd
+
+let mapleader = "\<Space>"
+
+set t_Co=256
+set background=dark
+let g:molokai_original=1
+let g:rehash256=1
+colorscheme molokai
+
+let g:airline_theme='luna'
+let g:airline_powerline_fonts=1
+set laststatus=2
+
+set showbreak=>\
+"set list
+set listchars=tab:»·,trail:¤
+"set listchars=eol:$,trail:·
+"set listchars=tab:»·,trail:¤,eol:§
+set foldmethod=marker
+set nobackup
+set nowritebackup
+
+set ff=unix
+set shiftwidth=4
+set shiftround
+set softtabstop=4
+set tabstop=4
+
+set autoindent
+set smartindent
+set cindent
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set textwidth=78
+let g:HiMtchBrktOn=1
+
+set scrolloff=3
+
+set cursorline cursorcolumn
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+
+set ruler
+set number
+
+set mousehide
+let c_comment_strings=1
+let PHP_removeCRwhenUnix=1
+let PHP_vintage_case_default_indent=1
+"set ff=unix
+
+set spelllang=en_gb nospell
+
+" window management
+"set splitbelow splitright
+
+" vim-indentation-display
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_start_level = 5
+
+" vimerl
+let erlang_skel_dir = "~/.vim/bundle/vimerl/plugin/erlang_skels/"
+
+" ctrlp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.beam     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.exe  " Windows
+let g:ctrlp_working_path_mode = 'cra'
+let erlang_force_use_vimerl_indent = 0
+
+" markdown
+let g:vim_markdown_folding_disabled=1
+
+" The Silver Searcher
+if executable('ag')
+	" Use ag over grep
+	set grepprg=ag\ --nogroup\ --nocolor
+	" Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+	let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+	"  ag is fast enough that CtrlP doesn't need to cache
+	let g:ctrlp_use_caching = 0
+
+	" bind K to grep word under cursor
+	nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
+endif
+
+" nerdtree
+let g:nerdtree_tabs_open_on_gui_startup = 0
+
+"syntactic
+let g:syntastic_phpcs_disable = 1
+
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
+
+augroup elixir
+	au!
+	au FileType elixir noremap <buffer> <leader>t :!mix test<cr>
+	au FileType elixir noremap <buffer> <leader>m :!mix compile<cr>
+augroup END
+
+
+" motion keys shortcuts
+nnoremap j gj
+nnoremap k gk
+
+" Remove highlights
+nmap <Leader><CR> :nohlsearch<cr>
+
+" fuck arrow keys! hardcore. :P
+map <Left> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
+map <Right> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
+map <Up> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
+map <Down> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
+
+" macros! yay.
+" reformat "text - something" to "* **text** -- something"
+nmap <Leader>1 ^i* **ea**ea-^
+
