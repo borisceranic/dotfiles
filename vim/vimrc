@@ -217,6 +217,12 @@ augroup elixir
 	au FileType elixir noremap <buffer> <Leader>m :!mix compile<cr>
 augroup END
 
+" Yank text to the OS X clipboard
+noremap <Leader>y "*y<CR>
+noremap <Leader>Y "*Y
+
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <Leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
 " motion keys shortcuts
 nnoremap j gj
