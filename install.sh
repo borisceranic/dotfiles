@@ -1,8 +1,13 @@
 #!/bin/sh
 
-cd $HOME
+realpath() {
+	[[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
 BKUP=".backup.$( date +%s )"
-DOTFILES="$( cd "$( dirname "$0" )" && pwd )"
+DOTFILES=$(dirname $(realpath "$0"))
+
+cd $HOME
 
 echo Installing vim files
 mv -f $HOME/.vim $HOME/$BKUP.vim
