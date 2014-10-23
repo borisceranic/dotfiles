@@ -163,6 +163,8 @@ let c_comment_strings=1
 let PHP_removeCRwhenUnix=1
 let PHP_vintage_case_default_indent=1
 "set ff=unix
+" disable entering into visual mode using mouse
+set mouse-=a
 
 set spelllang=en_gb nospell
 
@@ -223,7 +225,7 @@ nnoremap k gk
 " Remove highlights
 nmap <Leader><CR> :nohlsearch<cr>
 
-" fuck arrow keys! hardcore. :P
+" Disable arrow keys :P
 map <Left> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
 map <Right> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
 map <Up> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
