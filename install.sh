@@ -23,4 +23,8 @@ ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
 
 echo Installing tmux files
 mv -f $HOME/.tmux.conf $HOME/$BKUP.tmux.conf
+mv -f $HOME/.tmux-osx.conf $HOME/$BKUP.tmux-osx.conf
+mv -f $HOME/.tmux-linux.conf $HOME/$BKUP.tmux-linux.conf
 ln -s $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
+ln -s $DOTFILES/tmux/tmux-osx.conf $HOME/.tmux-osx.conf
+ln -s $DOTFILES/tmux/tmux-linux.conf $HOME/.tmux-linux.conf
