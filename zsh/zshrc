@@ -1,0 +1,85 @@
+## Variable definitions
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+
+# reduce vi-key escape timeout
+export KEYTIMEOUT=1
+
+path=("$HOME/sbin" "/usr/local/sbin" "/usr/local/bin" "/usr/local/mysql/bin" $path)
+export PATH
+
+
+# less config
+export LESSOPEN="| `which highlight` --failsafe --quiet --out-format=xterm256 %s"
+export LESS=' -R '
+
+# Vagrant configuration
+export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
+export VAGRANT_VMWARE_CLONE_DIRECTORY=$TMPDIR
+
+## / end of variables
+
+setopt appendhistory extendedglob
+unsetopt autocd beep nomatch notify
+bindkey -v
+zstyle :compinstall filename "$HOME/.zshrc"
+
+
+## brew zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+autoload -Uz compinit
+compinit
+
+# bash-style word separators
+autoload -U select-word-style
+select-word-style bash
+
+## brew zsh-history-substring-search
+source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
+# bind UP and DOWN arrow keys, bind k and j for VI mode
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+
+## Keyboard shortcuts
+# backspace
+bindkey "^?" backward-delete-char
+# ctrl+h
+bindkey "^H" backward-delete-char
+# ctrl+w
+bindkey "^W" backward-kill-word
+# ctrl+u
+bindkey "^U" backward-kill-line
+
+autoload -U colors
+colors
+# prompt
+# "%{$fg_bold[green]%}%m %{$fg_bold[white]%}%~ %(0?.$fg_bold[green].$fg_bold[red])%?$reset_color %{$fg_bold[yellow]%}%(\!.#.%%) $reset_color"
+fbk="%{$fg_bold[black]%}"
+fre="%{$fg_bold[red]%}"
+fgr="%{$fg_bold[green]%}"
+fye="%{$fg_bold[yellow]%}"
+fbl="%{$fg_bold[blue]%}"
+fma="%{$fg_bold[magenta]%}"
+fcy="%{$fg_bold[cyan]%}"
+fwh="%{$fg_bold[white]%}"
+rst="%{$reset_color%}"
+
+prompt=""
+# hostname
+prompt+="%(0#,$fre,$fgr)%n$fgr@%m$rst "
+
+# path
+prompt+="$fbl%5~$rst "
+
+# exit code of last command
+prompt+="%(0?,,$fre%?$rst )"
+
+# prompt symbol
+prompt+="%(!.$fcy#.$fye%%)$rst "
+
+export PROMPT
