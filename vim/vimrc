@@ -213,8 +213,8 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\\t/
 
 augroup elixir
 	au!
-	au FileType elixir noremap <buffer> <leader>t :!mix test<cr>
-	au FileType elixir noremap <buffer> <leader>m :!mix compile<cr>
+	au FileType elixir noremap <buffer> <Leader>t :!mix test<cr>
+	au FileType elixir noremap <buffer> <Leader>m :!mix compile<cr>
 augroup END
 
 
