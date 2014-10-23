@@ -4,7 +4,7 @@ if has('win32') || has('win64')
 	set guifont="Inconsolata":h12:cEASTEUROPE
 	source $VIMRUNTIME/mswin.vim
 else
-	set guifont=Consolas:h15
+	set guifont=Literation\ Mono\ Powerline:h12
 	let g:airline_powerline_fonts=1
 endif
 
