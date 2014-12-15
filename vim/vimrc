@@ -163,8 +163,6 @@ let c_comment_strings=1
 let PHP_removeCRwhenUnix=1
 let PHP_vintage_case_default_indent=1
 "set ff=unix
-" disable entering into visual mode using mouse
-set mouse-=a
 
 set spelllang=en_gb nospell
 
