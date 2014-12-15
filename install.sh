@@ -28,3 +28,9 @@ mv -f $HOME/.tmux-linux.conf $HOME/$BKUP.tmux-linux.conf
 ln -s $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $DOTFILES/tmux/tmux-osx.conf $HOME/.tmux-osx.conf
 ln -s $DOTFILES/tmux/tmux-linux.conf $HOME/.tmux-linux.conf
+
+echo Installing git files
+mv -f $HOME/.gitconfig $HOME/$BKUP.gitconfig
+mv -f $HOME/.gitignore_global $HOME/$BKUP.gitignore_global
+ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
+ln -s $DOTFILES/git/gitignore_global $HOME/.gitignore_global

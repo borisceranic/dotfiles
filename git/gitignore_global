@@ -1,0 +1,10 @@
+*~
+.DS_Store
+.vim*
+.*.swp
+.*.swo
+.vimprj/
+build.cmd
+.localized
+xcuserdata/
+atlassian-ide-plugin.xml

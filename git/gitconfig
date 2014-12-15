@@ -1,0 +1,23 @@
+[user]
+	name = Boris Ceranic
+	email = me@sosko.in.rs
+	signingkey = E64C638B3C4EE6D9
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	editor = /usr/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = auto
+[push]
+	default = simple
+[alias]
+	vlog = log --graph --date-order --date=relative --pretty=format:\"%C(white)%h: %Cgreen - %an - %Cred %C(cyan)%ar:%Creset%n%s%n\" --color
+	glog = log --color --pretty=format:\"%G? %h %s (%an %ae, GPG: %GS)\"
+	s = status --short --branch
+
