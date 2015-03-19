@@ -55,8 +55,19 @@ else
 fi
 
 $df/install.sh
+
 # vim post-install installation and cleaning of plugins
 vim -c "PluginInstall" -c "q" -c "q"
+
+PATHSFILE=$df/mac/etc-paths
+info "Copying paths file into /etc/paths. File contents is between dashed lines:"
+warn "-------------------------------------"
+warn $(cat $PATHSFILE)
+warn "-------------------------------------"
+info "Make sure this is okay. If it is not, abort the script using CTRL+C!"
+warn "Your password is required to install paths file!"
+sudo cp /etc/paths /etc/paths.bak
+sudo cp $PATHSFILE /etc/paths
 
 success "Finished installing core programs & bootstraping this system."
 
