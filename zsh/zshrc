@@ -86,3 +86,28 @@ prompt+="%(0?,,$fre%?$rst )"
 prompt+="%(!.$fcy#.$fye%%)$rst "
 
 export PROMPT
+
+## OS-specific configuration and overrides
+if [[ `uname` == 'Linux' ]]
+then
+	export LINUX=1
+	ZSH_LINUX=$HOME/.zshrc.linux.zsh
+	if [[ -f $ZSH_LINUX ]]
+	then
+		source $ZSH_LINUX
+	fi
+else
+	export LINUX=
+fi
+
+if [[ `uname` == 'Darwin' ]]
+then
+	export OSX=1
+	ZSH_OSX=$HOME/.zshrc.osx.zsh
+	if [[ -f $ZSH_OSX ]]
+	then
+		source $ZSH_OSX
+	fi
+else
+	export OSX=
+fi

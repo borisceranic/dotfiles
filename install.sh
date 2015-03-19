@@ -19,7 +19,11 @@ ln -s $DOTFILES/vim/gvimrc $HOME/.gvimrc
 
 echo Installing zsh files
 mv -f $HOME/.zshrc $HOME/$BKUP.zshrc
+mv -f $HOME/.zshrc.osx.zsh $HOME/$BKUP.zshrc.osx.zsh
+mv -f $HOME/.zshrc.linux.zsh $HOME/$BKUP.zshrc.linux.zsh
 ln -s $DOTFILES/zsh/zshrc $HOME/.zshrc
+ln -s $DOTFILES/zsh/zshrc.osx.zsh $HOME/.zshrc.osx.zsh
+ln -s $DOTFILES/zsh/zshrc.linux.zsh $HOME/.zshrc.linux.zsh
 
 echo Installing tmux files
 mv -f $HOME/.tmux.conf $HOME/$BKUP.tmux.conf
