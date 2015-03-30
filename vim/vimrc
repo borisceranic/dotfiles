@@ -47,6 +47,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'dhruvasagar/vim-vinegar'
 Plugin 'rking/ag.vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " change/add surrounding characters
 Plugin 'tpope/vim-surround'
