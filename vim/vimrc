@@ -106,6 +106,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+" javascript
+Plugin 'pangloss/vim-javascript'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
