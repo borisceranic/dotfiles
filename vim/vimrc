@@ -85,8 +85,8 @@ Plugin 'wavded/vim-stylus'
 
 " provisioning, automation, cfg mgmt...
 Plugin 'markcornick/vim-vagrant'
-Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'chase/vim-ansible-yaml'
 
 " snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
