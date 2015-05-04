@@ -11,3 +11,7 @@ source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.
 # ls colors
 export CLICOLOR=1
 export LSCOLORS="ExGxFxDxCxDxDxhbhdacEc"
+
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
