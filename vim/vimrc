@@ -181,7 +181,7 @@ let g:indent_guides_start_level = 5
 let erlang_skel_dir = "~/.vim/bundle/vimerl/plugin/erlang_skels/"
 
 " ctrlp
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.beam     " MacOSX/Linux
+set wildignore+=*/node_modules/*,*/tmp/*,*.so,*.swp,*.zip,*.beam     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*.exe  " Windows
 let g:ctrlp_working_path_mode = 'cra'
 let erlang_force_use_vimerl_indent = 0
