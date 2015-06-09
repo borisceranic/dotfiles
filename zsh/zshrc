@@ -32,18 +32,22 @@ if ! zgen saved; then
 
 	zgen oh-my-zsh
 
+	## NOTE: after modifying this list of plugins, run "zgen update",
+	## and then restart your zsh shell twice: first one executes this block
+	## of code, second one initializes zsh properly.
+
 	# plugins
 	zgen oh-my-zsh plugins/git
+	zgen oh-my-zsh plugins/brew
+	zgen oh-my-zsh plugins/brew-cask
 	zgen oh-my-zsh plugins/sudo
+	zgen oh-my-zsh plugins/mix
 	zgen oh-my-zsh plugins/command-not-found
 	zgen load zsh-users/zsh-syntax-highlighting
 	zgen load zsh-users/zsh-history-substring-search
 
 	# completions
 	zgen load zsh-users/zsh-completions src
-
-	# theme
-	zgen oh-my-zsh themes/arrow
 
 	# save all to init script
 	zgen save
@@ -54,8 +58,7 @@ unsetopt autocd beep nomatch notify
 bindkey -v
 zstyle :compinstall filename "$HOME/.zshrc"
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 # bash-style word separators
 autoload -U select-word-style
