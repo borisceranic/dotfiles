@@ -1,5 +1,5 @@
 # path customization
-path=("$HOME/sbin" "/usr/local/mysql/bin" $path)
+path=("$HOME/sbin" $path)
 export PATH
 
 # ls colors
