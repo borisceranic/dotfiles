@@ -138,3 +138,6 @@ then
 else
 	export OSX=
 fi
+
+alias tcol256="terminal-colors --cube-slice --numbers --padding"
+alias grrep="grep -i -r"
