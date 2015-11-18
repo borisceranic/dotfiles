@@ -8,3 +8,4 @@ build.cmd
 .localized
 xcuserdata/
 atlassian-ide-plugin.xml
+.phpintel/
