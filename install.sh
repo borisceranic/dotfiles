@@ -6,6 +6,7 @@ realpath() {
 
 BKUP=".backup.$( date +%s )"
 DOTFILES=$(dirname $(realpath "$0"))
+ST3="$HOME/Library/Application Support/Sublime Text 3"
 
 cd $HOME
 
@@ -38,3 +39,9 @@ mv -f $HOME/.gitconfig $HOME/$BKUP.gitconfig
 mv -f $HOME/.gitignore_global $HOME/$BKUP.gitignore_global
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/git/gitignore_global $HOME/.gitignore_global
+
+echo Installing Sublime Text 3 files
+if [[ -d $ST3 ]]; then
+	mv -f $ST3 $ST3$BKUP.dotfiles
+fi
+ln -s $DOTFILES/st3 $ST3

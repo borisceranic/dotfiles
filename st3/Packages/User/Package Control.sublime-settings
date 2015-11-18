@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"EditorConfig",
+		"Focus File on Sidebar",
+		"FullUndo",
+		"Git",
+		"GitGutter",
+		"Markdown Preview",
+		"Package Control",
+		"PHPIntel",
+		"Pretty JSON",
+		"Seti_UI",
+		"Seti_UX",
+		"Theme - Soda",
+		"Themr",
+		"VIM Navigation"
+	]
+}
