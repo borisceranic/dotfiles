@@ -34,8 +34,8 @@ brew install caskroom/cask/brew-cask
 ################### INSTALL PACKAGES VIA BREW & CASK #####################
 
 info "Installing: git, zsh, mosh, tmux, vim"
-brew install git git-flow git-flow-clone
-brew install zsh zsh-completions zsh-history-substring-search
+brew install git
+brew install zsh
 brew install mosh
 brew install tmux reattach-to-user-namespace
 brew install vim
