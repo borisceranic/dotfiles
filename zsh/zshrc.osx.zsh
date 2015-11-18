@@ -2,6 +2,9 @@
 path=("$HOME/sbin" $path)
 export PATH
 
+# homebrew cask default options
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # ls colors
 export CLICOLOR=1
 export LSCOLORS="ExGxFxDxCxDxDxhbhdacEc"

@@ -25,6 +25,9 @@ read
 info "Installing brew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Temporarily setting "brew cask" Application install location
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 info "Installing brew cask..."
 brew install caskroom/cask/brew-cask
 
