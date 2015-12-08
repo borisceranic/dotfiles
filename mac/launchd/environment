@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+syslog -s -l warn "Set environment variables with /etc/environment $(whoami) - start"
+
+if [ -x /usr/libexec/path_helper ]; then
+    export PATH=""
+    eval `/usr/libexec/path_helper -s`
+    launchctl setenv PATH $PATH
+fi
+
+# You can add more global environments like this:
+#
+# launchctl setenv JAVA_HOME /usr/local/jdk1.7
+
+osascript -e 'tell app "Dock" to quit'
+
+syslog -s -l warn "Set environment variables with /etc/environment $(whoami) - complete"

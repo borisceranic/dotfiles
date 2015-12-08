@@ -63,6 +63,7 @@ $df/install.sh
 vim -c "PluginInstall" -c "q" -c "q"
 
 PATHSFILE=$df/mac/etc-paths
+LAUNCHDDIR=$df/mac/launchd
 info "Copying paths file into /etc/paths. File contents is between dashed lines:"
 warn "-------------------------------------"
 warn $(cat $PATHSFILE)
@@ -71,6 +72,14 @@ info "Make sure this is okay. If it is not, abort the script using CTRL+C!"
 warn "Your password is required to install paths file!"
 sudo cp /etc/paths /etc/paths.bak
 sudo cp $PATHSFILE /etc/paths
+
+info "Configuring automatic global path updating (user- and root-level)"
+sudo cp $LAUNCHDDIR/environment /etc/environment
+sudo cp $LAUNCHDDIR/environment.plist /Library/LaunchDaemons/environment.plist
+sudo cp $LAUNCHDDIR/environment.user.plist /Library/LaunchAgents/environment.user.plist
+
+launchctl load -w /Library/LaunchAgents/environment.user.plist
+sudo launchctl load -w /Library/LaunchDaemons/environment.plist
 
 success "Finished installing core programs & bootstraping this system."
 
