@@ -30,6 +30,7 @@ brew cask install gpgtools
 brew cask install iterm2
 brew cask install karabiner
 brew cask install nvalt
+brew cask install tuntap
 brew install awscli
 brew install boot2docker
 brew install elixir
@@ -44,6 +45,7 @@ brew install keybase
 brew install mobile-shell
 brew install node
 brew install nvm
+brew install openvpn
 brew install php56
 brew install php56-intl
 brew install rebar
