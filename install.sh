@@ -41,7 +41,7 @@ ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/git/gitignore_global $HOME/.gitignore_global
 
 echo Installing Sublime Text 3 files
-if [[ -d $ST3 ]]; then
-	mv -f $ST3 $ST3$BKUP.dotfiles
+if [[ -d "$ST3" ]]; then
+	mv "$ST3" "$ST3$BKUP.dotfiles"
 fi
-ln -s $DOTFILES/st3 $ST3
+ln -s "$DOTFILES/st3" "$ST3"
