@@ -8,7 +8,7 @@
 	"auto_complete_cycle": true,
 	"bold_folder_labels": false,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"color_scheme": "Packages/Seti_UI/Scheme/Seti_monokai.tmTheme",
 	"copy_with_empty_selection": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":

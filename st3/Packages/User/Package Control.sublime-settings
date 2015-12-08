@@ -10,14 +10,20 @@
 		"FullUndo",
 		"Git",
 		"GitGutter",
+		"HTMLAttributes",
+		"HTMLBeautify",
+		"JsFormat",
 		"Markdown Preview",
 		"Package Control",
 		"PHPIntel",
 		"Pretty JSON",
 		"Seti_UI",
 		"Seti_UX",
+		"Symfony2 Override",
+		"Symfony2 Snippets",
 		"Theme - Soda",
 		"Themr",
+		"Twig",
 		"VIM Navigation"
 	]
 }
