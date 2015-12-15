@@ -17,10 +17,6 @@ then
 fi
 export LESS=' -R '
 
-# Vagrant configuration
-export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
-export VAGRANT_VMWARE_CLONE_DIRECTORY=$TMPDIR
-
 ## / end of variables
 
 # zgen - zsh plugin manager and init file generator
