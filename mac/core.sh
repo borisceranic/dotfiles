@@ -59,7 +59,7 @@ fi
 
 $df/install.sh
 
-# vim post-install installation and cleaning of plugins
+info "Installing Vim plugins"
 vim -c "PluginInstall" -c "q" -c "q"
 
 PATHSFILE=$df/mac/etc-paths
