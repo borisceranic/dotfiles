@@ -45,3 +45,7 @@ if [[ -d "$ST3" ]]; then
 	mv "$ST3" "$ST3$BKUP.dotfiles"
 fi
 ln -s "$DOTFILES/st3" "$ST3"
+
+echo Installing Atom editor files
+mv -f $HOME/.atom $HOME/$BKUP.atom
+ln -s $DOTFILES/atom $HOME/.atom

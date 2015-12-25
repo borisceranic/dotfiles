@@ -39,6 +39,7 @@ brew install zsh
 brew install mosh
 brew install tmux reattach-to-user-namespace
 brew install vim
+brew install atom
 
 info "Installing: gawk"
 brew install gawk
@@ -61,6 +62,9 @@ $df/install.sh
 
 info "Installing Vim plugins"
 vim -c "PluginInstall" -c "q" -c "q"
+
+info "Installing Atom editor's package pre-requisite modules"
+$MYDIR/atom/reinstall_packages.sh
 
 PATHSFILE=$df/mac/etc-paths
 LAUNCHDDIR=$df/mac/launchd

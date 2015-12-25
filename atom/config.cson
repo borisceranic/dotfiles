@@ -1,0 +1,12 @@
+"*":
+  "exception-reporting":
+    userId: "0c006b62-f369-6aa8-0727-da1ad523630a"
+  welcome:
+    showOnStartup: false
+  core: {}
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    tabLength: 4
+    fontSize: 13
+  "one-light-ui": {}
