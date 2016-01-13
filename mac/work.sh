@@ -44,7 +44,6 @@ brew install jenv
 brew install keybase
 brew install mobile-shell
 brew install node
-brew install nvm
 brew install openvpn
 brew install php56
 brew install php56-intl
