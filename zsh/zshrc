@@ -87,6 +87,9 @@ bindkey "^W" backward-kill-word
 # ctrl+u
 bindkey "^U" backward-kill-line
 
+# numpad enter...
+bindkey -s "^[OM" "^M"
+
 autoload -U colors
 colors
 # prompt
