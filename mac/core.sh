@@ -61,7 +61,7 @@ fi
 $df/install.sh
 
 info "Installing Vim plugins"
-vim -c "PluginInstall" -c "q" -c "q"
+vim +PluginInstall +qall
 
 info "Installing Atom editor's package pre-requisite modules"
 $MYDIR/atom/reinstall_packages.sh
