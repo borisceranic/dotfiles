@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Do not change, unless you wish to update all other hard-coded paths!
+DOTFILES="$HOME/dotfiles"
+
 realpath() {
 	[[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
 }
@@ -58,7 +61,7 @@ else
 	git submodule update --init --recursive
 fi
 
-$df/install.sh
+$df/common/link-rc-files.sh
 
 info "Installing Vim plugins"
 vim +PluginInstall +qall

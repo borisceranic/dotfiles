@@ -4,8 +4,11 @@ realpath() {
 	[[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
 }
 
+if [ -z $DOTFILES ]; then
+	DOTFILES=$(dirname $(realpath "$0"))/..
+fi
+
 BKUP=".backup.$( date +%s )"
-DOTFILES=$(dirname $(realpath "$0"))
 ST3="$HOME/Library/Application Support/Sublime Text 3"
 
 cd $HOME
