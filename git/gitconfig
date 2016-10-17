@@ -20,4 +20,9 @@
 	vlog = log --graph --date-order --date=relative --pretty=format:\"%C(white)%h: %Cgreen - %an - %Cred %C(cyan)%ar:%Creset%n%s%n\" --color
 	glog = log --color --pretty=format:\"%G? %h %s (%an %ae, GPG: %GS)\"
 	s = status --short --branch
+	stale = "! abandoned_branches() { \
+		        for branch in `git branch -r --no-merged | grep -v HEAD`; do \
+		            echo `git show --format='%ci %cr %ae' $branch | head -n 1` $branch; \
+		        done | sort -r | column -t; \
+		    }; abandoned_branches"
 
