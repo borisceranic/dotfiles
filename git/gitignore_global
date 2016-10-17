@@ -9,3 +9,4 @@ build.cmd
 xcuserdata/
 atlassian-ide-plugin.xml
 .phpintel/
+.idea/
