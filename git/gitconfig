@@ -1,7 +1,9 @@
 [user]
 	name = Boris Ceranic
 	email = me@sosko.in.rs
-	signingkey = 566A9F934923D859
+	signingkey = 15DDE55BC7327FB8
+[commit]
+	gpgSign = true
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
