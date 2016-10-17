@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-4lopum"
+    ]
+  ],
+  "_from": "../d-116917-48882-d3frer/package.tgz",
+  "_id": "markdown-preview-opener@0.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/markdown-preview-opener",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116917-48882-d3frer/package.tgz",
+  "_shasum": "47dbaa88c7846bafec1e4c5f6b325d48e486a3f3",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-4lopum",
+  "bugs": {
+    "url": "https://github.com/plafue/markdown-preview-opener/issues"
+  },
+  "dependencies": {},
+  "description": "Opens the markdown-preview pane automatically when a markdown file is opened",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/plafue/markdown-preview-opener#readme",
+  "license": "MIT",
+  "main": "./lib/markdown-preview-opener",
+  "name": "markdown-preview-opener",
+  "optionalDependencies": {},
+  "readme": "# markdown-preview-opener package\n\nOpens the [markdown preview](https://atom.io/packages/markdown-preview) pane automatically when a markdown file is opened.\n\nIt can also close the preview pane for you, when you close the corresponding editor.\n\nI'm lazy.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plafue/markdown-preview-opener.git"
+  },
+  "version": "0.1.1"
+}

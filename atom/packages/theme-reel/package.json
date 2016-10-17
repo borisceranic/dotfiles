@@ -1,8 +1,57 @@
 {
-  "name": "theme-reel",
-  "main": "./lib/theme-reel",
-  "version": "1.2.0",
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1q3cy8n/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1q3cy8n/package.tgz",
+        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1q3cy8n/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-jjmkka"
+    ]
+  ],
+  "_from": "../d-116917-48882-1q3cy8n/package.tgz",
+  "_id": "theme-reel@1.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/theme-reel",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1q3cy8n/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1q3cy8n/package.tgz",
+    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1q3cy8n/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116917-48882-1q3cy8n/package.tgz",
+  "_shasum": "2ac608e3abb4abab8f9bb98b285ac7c7d24aa55e",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1q3cy8n/package.tgz",
+  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-jjmkka",
+  "activationCommands": {
+    "atom-workspace": [
+      "theme-reel:next",
+      "theme-reel:previous"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/clessg/theme-reel/issues"
+  },
+  "dependencies": {},
   "description": "Quickly switch between syntax themes without configuration. Inspired by the excellent Themr.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/clessg/theme-reel#readme",
   "keywords": [
     "themes",
     "switch themes",
@@ -13,43 +62,15 @@
     "atom",
     "atom package"
   ],
-  "activationCommands": {
-    "atom-workspace": [
-      "theme-reel:next",
-      "theme-reel:previous"
-    ]
-  },
+  "license": "MIT",
+  "main": "./lib/theme-reel",
+  "name": "theme-reel",
+  "optionalDependencies": {},
+  "readme": "# Theme Reel package\n\nAn Atom package that allows you to quickly switch between syntax themes. Inspired by the excellent Themr package for Sublime Text.\n\nPress `ctrl-shift-[` for the previous theme, and `ctrl-shift-]` for the next theme. The new theme name is briefly shown in the bottom left of the status bar.\n\n![Theme Reel](http://i.imgur.com/BGNUkle.gif)",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clessg/theme-reel.git"
   },
-  "license": "MIT",
-  "engines": {
-    "atom": ">=0.174.0 <2.0.0"
-  },
-  "dependencies": {},
-  "readme": "# Theme Reel package\n\nAn Atom package that allows you to quickly switch between syntax themes. Inspired by the excellent Themr package for Sublime Text.\n\nPress `ctrl-shift-[` for the previous theme, and `ctrl-shift-]` for the next theme. The new theme name is briefly shown in the bottom left of the status bar.\n\n![Theme Reel](http://i.imgur.com/BGNUkle.gif)",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/clessg/theme-reel/issues"
-  },
-  "homepage": "https://github.com/clessg/theme-reel#readme",
-  "_id": "theme-reel@1.2.0",
-  "_shasum": "2ac608e3abb4abab8f9bb98b285ac7c7d24aa55e",
-  "_resolved": "file:../d-1151125-26494-1anugej/package.tgz",
-  "_from": "../d-1151125-26494-1anugej/package.tgz",
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".js": [
-        "lib/theme-reel-view.js",
-        "lib/theme-reel.js"
-      ],
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
-  }
+  "version": "1.2.0"
 }

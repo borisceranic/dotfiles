@@ -7,3 +7,5 @@ blob-store
 .apm
 node_modules
 projects.cson
+packages/*/**
+!packages/*/package.json

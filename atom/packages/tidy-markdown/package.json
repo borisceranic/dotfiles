@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-sw1ypl/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-sw1ypl/package.tgz",
+        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-sw1ypl/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-kq6s6b"
+    ]
+  ],
+  "_from": "../d-116917-48882-sw1ypl/package.tgz",
+  "_id": "tidy-markdown@3.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/tidy-markdown",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-sw1ypl/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-sw1ypl/package.tgz",
+    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-sw1ypl/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116917-48882-sw1ypl/package.tgz",
+  "_shasum": "7e5c1609a689301a6db0e76aac4e8ee78c62e49d",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-sw1ypl/package.tgz",
+  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-kq6s6b",
+  "author": {
+    "name": "Sean Lang",
+    "email": "slang800@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/slang800/atom-tidy-markdown/issues"
+  },
+  "configSchema": {
+    "runOnSave": {
+      "type": "boolean",
+      "default": true
+    },
+    "ensureFirstHeaderIsH1": {
+      "type": "boolean",
+      "default": true,
+      "description": "When enabled, we make sure that the \"root-level\" header of the document is an H1. If you're working with files that are fragments of a larger document, then disabling this option might be needed."
+    }
+  },
+  "dependencies": {
+    "tidy-markdown": "git://github.com/slang800/tidy-markdown.git#v2.0.3"
+  },
+  "description": "Fix ugly markdown.",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/slang800/atom-tidy-markdown#readme",
+  "keywords": [
+    "fix",
+    "format",
+    "formatting",
+    "markdown",
+    "md",
+    "pretty",
+    "reformat",
+    "styleguide",
+    "tables",
+    "tidy",
+    "tidy-markdown"
+  ],
+  "license": "GPL-3.0",
+  "main": "./lib/index",
+  "name": "tidy-markdown",
+  "optionalDependencies": {},
+  "readme": "# Tidy Markdown\n\nUses [tidy-markdown](http://github.com/slang800/tidy-markdown) to fix and reformat ugly Markdown.\n\nYou can run it on-save:\n\n![running tidy-markdown on-save](https://raw.githubusercontent.com/slang800/psychic-ninja/master/tidy-markdown-tables.gif)\n\n![running tidy-markdown on-save](https://raw.githubusercontent.com/slang800/psychic-ninja/master/tidy-markdown-line-breaks.gif)\n\n![running tidy-markdown on-save](https://raw.githubusercontent.com/slang800/psychic-ninja/master/tidy-markdown-ordered-lists.gif)\n\nOr you can run it from the command palette:\n\n![running tidy-markdown from the command palette](https://raw.githubusercontent.com/slang800/psychic-ninja/master/tidy-markdown-command-palette.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slang800/atom-tidy-markdown.git"
+  },
+  "version": "3.0.1"
+}

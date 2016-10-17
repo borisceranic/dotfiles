@@ -10,4 +10,4 @@ do
   package_names="$package_names $package_name"
 done
 
-apm install $package_names
+apm install --production $package_names

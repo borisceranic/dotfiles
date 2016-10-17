@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-i2m3td/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-i2m3td/package.tgz",
+        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-i2m3td/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-uab37r"
+    ]
+  ],
+  "_from": "../d-116917-48882-i2m3td/package.tgz",
+  "_id": "ansible-snippets@0.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ansible-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-i2m3td/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-i2m3td/package.tgz",
+    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-i2m3td/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116917-48882-i2m3td/package.tgz",
+  "_shasum": "8052135433765098b2d2f5b6dcf5c36ac6c99ce9",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-i2m3td/package.tgz",
+  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-uab37r",
+  "activationCommands": {
+    "atom-workspace": "ansible-snippets:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/skord/atom-ansible-snippets/issues"
+  },
+  "dependencies": {},
+  "description": "Ansible Snippets",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/skord/atom-ansible-snippets#readme",
+  "license": "MIT",
+  "main": "./lib/ansible-snippets",
+  "name": "ansible-snippets",
+  "optionalDependencies": {},
+  "readme": "# ansible-snippets package\n\nSnippets for Ansible\n\n![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skord/atom-ansible-snippets.git"
+  },
+  "version": "0.2.0"
+}

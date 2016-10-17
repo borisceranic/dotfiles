@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\prokopiy\\AppData\\Local\\Temp\\d-11689-4556-cn4qq6\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\prokopiy\\AppData\\Local\\Temp\\d-11689-4556-cn4qq6\\package.tgz",
+        "spec": "C:\\Users\\prokopiy\\AppData\\Local\\Temp\\d-11689-4556-cn4qq6\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\prokopiy\\AppData\\Local\\Temp\\apm-install-dir-11689-4556-6bsm6o"
+    ],
+    [
+      {
+        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-194yj5v/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-194yj5v/package.tgz",
+        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-194yj5v/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-muqf00"
+    ]
+  ],
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ],
+      ".coffee": [
+        "lib\\atom-autocomplete-erlang.coffee",
+        "lib\\provider-erlang.coffee"
+      ],
+      ".js": []
+    },
+    "folders": []
+  },
+  "_from": "../d-116917-48882-194yj5v/package.tgz",
+  "_id": "atom-autocomplete-erlang@0.6.20",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-autocomplete-erlang",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-194yj5v/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-194yj5v/package.tgz",
+    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-194yj5v/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116917-48882-194yj5v/package.tgz",
+  "_shasum": "9691fd0410288f921a5ae34f971223bfe927918d",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-194yj5v/package.tgz",
+  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-muqf00",
+  "bugs": {
+    "url": "https://github.com/prokopiy/atom-autocomplete-erlang/issues"
+  },
+  "dependencies": {},
+  "description": "Erlang code autocompletions",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/prokopiy/atom-autocomplete-erlang#readme",
+  "keywords": [
+    "erlang",
+    "erl",
+    "code",
+    "autocomplete",
+    "auto",
+    "snippet"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-autocomplete-erlang",
+  "name": "atom-autocomplete-erlang",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# atom-autocomplete-erlang\n[![Build Status](https://travis-ci.org/prokopiy/atom-autocomplete-erlang.svg?branch=master)](https://travis-ci.org/prokopiy/atom-autocomplete-erlang)\n[![Package version!](https://img.shields.io/apm/v/atom-autocomplete-erlang.svg?)](https://atom.io/packages/atom-autocomplete-erlang)\n[![Dependencies!](https://img.shields.io/david/prokopiy/atom-autocomplete-erlang.svg?)](https://david-dm.org/prokopiy/atom-autocomplete-erlang)\n\n## Features\n  - Autocompletion of global module functions\n  - Autocompletion of local project module functions (those which compile successfully)\n  - Adds snippets to Erlang files.\n\n![A screencast](http://g.recordit.co/w2jPCRJlL4.gif)\n\n## Requirements\n  Must be installed Erlang/OTP and path to 'erl' executable file must be defined in OS.\n\n  Recommended that your project has a standard directory structure with the design principles of OTP applications.\n\n### Required packages\n  [language-erlang](https://atom.io/packages/language-erlang)\n  [autocomplete-plus](https://atom.io/packages/autocomplete-plus)\n  [autocomplete-snippets](https://atom.io/packages/autocomplete-snippets)\n\napm publish patch\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prokopiy/atom-autocomplete-erlang.git"
+  },
+  "version": "0.6.20"
+}
