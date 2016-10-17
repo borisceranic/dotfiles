@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-package_list=$(find ~/.atom/packages -type d -mindepth 1 -maxdepth 1)
+package_paths=$(find ~/.atom/packages -type d -mindepth 1 -maxdepth 1)
+package_names=""
 
-for package in $package_list
+for package in $package_paths
 do
   cd $package
   package_name=$(basename $package)
-  echo "> Package: $package_name"
-  apm install
+  package_names="$package_names $package_name"
 done
+
+apm install $package_names
