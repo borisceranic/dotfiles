@@ -5,6 +5,7 @@ SAVEHIST=1000
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export DISABLE_AUTO_UPDATE=true
 
 export EDITOR=`which vim`
 
@@ -39,6 +40,7 @@ if ! zgen saved; then
 	zgen oh-my-zsh plugins/git-prompt
 	zgen oh-my-zsh plugins/git-remote-branch
 	zgen oh-my-zsh plugins/brew
+	zgen oh-my-zsh plugins/yarn
 	zgen oh-my-zsh plugins/sudo
 	zgen oh-my-zsh plugins/symfony2
 	zgen oh-my-zsh plugins/command-not-found
