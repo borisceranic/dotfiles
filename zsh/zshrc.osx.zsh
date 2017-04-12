@@ -1,5 +1,5 @@
 # path customization
-path=("$HOME/sbin" $path)
+path=("$HOME/sbin" "$HOME/.composer/vendor/bin" $path)
 export PATH
 
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
