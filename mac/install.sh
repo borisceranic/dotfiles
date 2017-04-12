@@ -42,10 +42,9 @@ fi
 
 ################### INSTALL PACKAGES VIA BREW & CASK #####################
 
-info "Installing: git, vim, atom"
+info "Installing: git, vim"
 brew install git
 brew install vim
-brew cask install atom
 
 info "Installing: gawk"
 brew install gawk
@@ -67,9 +66,6 @@ $DOTFILES/common/link-rc-files.sh
 
 info "Installing Vim plugins"
 vim +PluginInstall +qall
-
-info "Installing Atom editor's package pre-requisite modules"
-$DOTFILES/atom/reinstall_packages.sh
 
 if [ ! -f /etc/paths.bak ]; then
 

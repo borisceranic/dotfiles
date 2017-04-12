@@ -13,16 +13,21 @@ echo
 warn "Press any key to continue. To abort, pressing CTRL+C."
 
 brew cask install 1password
+brew cask install atom
 brew cask install dropbox
 brew cask install google-chrome
+brew cask install google-cloud-sdk
+brew cask install gpgtools
+brew cask install iterm2
 brew cask install java
+brew cask install keybase
 brew cask install mysqlworkbench
+brew cask install nvalt
+brew cask install postman
+brew cask install robomongo
 brew cask install slack
 brew cask install sourcetree
 brew cask install transmit
-brew cask install gpgtools
-brew cask install iterm2
-brew cask install nvalt
 brew install awscli
 brew install docker
 brew install docker-compose
@@ -34,10 +39,12 @@ brew install gnupg2
 brew install gpg-agent
 brew install highlight
 brew install imagemagick
-brew install keybase
 brew install mobile-shell
 brew install node
 brew install php56
 brew install php56-intl
 brew install php71
 brew install php71-intl
+
+info "Installing Atom editor's package pre-requisite modules"
+$DOTFILES/atom/reinstall_packages.sh
