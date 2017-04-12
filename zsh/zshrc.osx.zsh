@@ -9,12 +9,6 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 export HOMEBREW_GITHUB_API_TOKEN=""
 export HOMEBREW_NO_ANALYTICS=1
 
-nvm_prefix=$(brew --prefix nvm)
-if [ ! -z $nvm_prefix ]; then
-	export NVM_DIR="$HOME/.nvm"
-	source "$(brew --prefix nvm)/nvm.sh"
-fi
-
 # ls colors
 export CLICOLOR=1
 export LSCOLORS="ExGxFxDxCxDxDxhbhdacEc"
