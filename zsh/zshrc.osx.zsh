@@ -13,7 +13,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export CLICOLOR=1
 export LSCOLORS="ExGxFxDxCxDxDxhbhdacEc"
 
-alias brew-upgrade="brew upgrade --all; brew cleanup; brew cask cleanup; brew doctor; brew missing"
+alias brew-upgrade="brew upgrade; brew cleanup; brew cask cleanup; brew doctor; brew missing"
 alias ports="netstat -p tcp -a -n | grep LISTEN "
 alias routes="netstat -r -n"
 alias flush-dns="sudo killall -HUP mDNSResponder"
