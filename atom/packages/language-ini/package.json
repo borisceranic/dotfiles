@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-hl18ie/package.tgz",
+        "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-1c17yy0/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-hl18ie/package.tgz",
-        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-hl18ie/package.tgz",
+        "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-1c17yy0/package.tgz",
+        "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-1c17yy0/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-l4xbrg"
+      "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-1cy9ifh"
     ]
   ],
-  "_from": "../d-116917-48882-hl18ie/package.tgz",
-  "_id": "language-ini@1.16.0",
+  "_from": "../d-117312-47232-1c17yy0/package.tgz",
+  "_id": "language-ini@1.19.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/language-ini",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-hl18ie/package.tgz",
+    "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-1c17yy0/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-hl18ie/package.tgz",
-    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-hl18ie/package.tgz",
+    "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-1c17yy0/package.tgz",
+    "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-1c17yy0/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116917-48882-hl18ie/package.tgz",
-  "_shasum": "8432037325e0c87f7d56a01a8e97a60df3712a00",
+  "_resolved": "file:../d-117312-47232-1c17yy0/package.tgz",
+  "_shasum": "ca74444860c3f6c58a78ca5021850500f291c94d",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-hl18ie/package.tgz",
-  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-l4xbrg",
+  "_spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-1c17yy0/package.tgz",
+  "_where": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-1cy9ifh",
   "author": {
     "name": "Jacob Bednarz",
     "email": "jacob.bednarz@gmail.com",
@@ -52,7 +52,6 @@
   },
   "homepage": "https://github.com/jacobbednarz/atom-language-ini",
   "license": "MIT",
-  "main": "index.js",
   "name": "language-ini",
   "optionalDependencies": {},
   "readme": "# Syntax support for INI files in Atom\n\nContributions are welcome and bonus are awarded for pull requests. Please fork and send a pull requests for updates to grammars, snippets or documentation.\n",
@@ -64,5 +63,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.16.0"
+  "version": "1.19.0"
 }

@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1sfcmva/package.tgz",
+        "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-ll87np/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1sfcmva/package.tgz",
-        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1sfcmva/package.tgz",
+        "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-ll87np/package.tgz",
+        "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-ll87np/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-14f326z"
+      "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-avuzu3"
     ]
   ],
-  "_from": "../d-116917-48882-1sfcmva/package.tgz",
+  "_from": "../d-117312-47232-ll87np/package.tgz",
   "_id": "synced-sidebar@0.4.3",
   "_inCache": true,
   "_installable": true,
   "_location": "/synced-sidebar",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1sfcmva/package.tgz",
+    "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-ll87np/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1sfcmva/package.tgz",
-    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1sfcmva/package.tgz",
+    "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-ll87np/package.tgz",
+    "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-ll87np/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116917-48882-1sfcmva/package.tgz",
+  "_resolved": "file:../d-117312-47232-ll87np/package.tgz",
   "_shasum": "01e6a0acc555bac84f374f855cb26cd5d8882589",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1sfcmva/package.tgz",
-  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-14f326z",
+  "_spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-ll87np/package.tgz",
+  "_where": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-avuzu3",
   "author": {
     "name": "Peter J. Shin",
     "url": "https://github.com/peterdotjs"

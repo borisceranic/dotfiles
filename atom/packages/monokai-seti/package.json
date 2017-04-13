@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1bw2frh/package.tgz",
+        "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-b2yo8d/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1bw2frh/package.tgz",
-        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1bw2frh/package.tgz",
+        "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-b2yo8d/package.tgz",
+        "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-b2yo8d/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-1uub1g"
+      "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-1xfebru"
     ]
   ],
-  "_from": "../d-116917-48882-1bw2frh/package.tgz",
+  "_from": "../d-117312-47232-b2yo8d/package.tgz",
   "_id": "monokai-seti@0.7.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/monokai-seti",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1bw2frh/package.tgz",
+    "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-b2yo8d/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1bw2frh/package.tgz",
-    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1bw2frh/package.tgz",
+    "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-b2yo8d/package.tgz",
+    "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-b2yo8d/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116917-48882-1bw2frh/package.tgz",
+  "_resolved": "file:../d-117312-47232-b2yo8d/package.tgz",
   "_shasum": "73a3f8365ee08b38adf047835087e3f65e2cf45b",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-1bw2frh/package.tgz",
-  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-1uub1g",
+  "_spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-b2yo8d/package.tgz",
+  "_where": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-1xfebru",
   "bugs": {
     "url": "https://github.com/schmitzjake/monokai-seti/issues"
   },

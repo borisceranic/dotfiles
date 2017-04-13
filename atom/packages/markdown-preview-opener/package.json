@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+        "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-n6sooo/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
-        "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+        "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-n6sooo/package.tgz",
+        "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-n6sooo/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-4lopum"
+      "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-1teonef"
     ]
   ],
-  "_from": "../d-116917-48882-d3frer/package.tgz",
+  "_from": "../d-117312-47232-n6sooo/package.tgz",
   "_id": "markdown-preview-opener@0.1.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/markdown-preview-opener",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+    "raw": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-n6sooo/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
-    "spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
+    "rawSpec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-n6sooo/package.tgz",
+    "spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-n6sooo/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116917-48882-d3frer/package.tgz",
+  "_resolved": "file:../d-117312-47232-n6sooo/package.tgz",
   "_shasum": "47dbaa88c7846bafec1e4c5f6b325d48e486a3f3",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/d-116917-48882-d3frer/package.tgz",
-  "_where": "/private/var/folders/z0/wj5gmlb52_sf7jp9nq6mt7fh0000gn/T/apm-install-dir-116917-48882-4lopum",
+  "_spec": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/d-117312-47232-n6sooo/package.tgz",
+  "_where": "/private/var/folders/jn/3lpcby_s5l9dg6451p46y0q80000gn/T/apm-install-dir-117312-47232-1teonef",
   "bugs": {
     "url": "https://github.com/plafue/markdown-preview-opener/issues"
   },
