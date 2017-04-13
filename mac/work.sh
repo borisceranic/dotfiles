@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+DOTFILES=$HOME/dotfiles
+
 realpath() {
 	[[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
 }
