@@ -12,6 +12,8 @@ success "This script will install work related programs."
 echo
 warn "Press any key to continue. To abort, pressing CTRL+C."
 
+brew tap homebrew/php
+
 brew cask install 1password
 brew cask install atom
 brew cask install dropbox
@@ -41,8 +43,6 @@ brew install highlight
 brew install imagemagick
 brew install mobile-shell
 brew install node
-brew install php56
-brew install php56-intl
 brew install php71
 brew install php71-intl
 
