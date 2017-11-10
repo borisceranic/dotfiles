@@ -33,7 +33,3 @@ mv -f $HOME/.gitconfig $HOME/$BKUP.gitconfig
 mv -f $HOME/.gitignore_global $HOME/$BKUP.gitignore_global
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/git/gitignore_global $HOME/.gitignore_global
-
-echo Installing Atom editor files
-mv -f $HOME/.atom $HOME/$BKUP.atom
-ln -s $DOTFILES/atom $HOME/.atom

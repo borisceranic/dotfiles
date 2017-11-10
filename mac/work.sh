@@ -17,7 +17,6 @@ warn "Press any key to continue. To abort, pressing CTRL+C."
 brew tap homebrew/php
 
 brew cask install 1password
-brew cask install atom
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-cloud-sdk
@@ -48,6 +47,3 @@ brew install node
 brew install php71
 brew install php71-intl
 brew install php71-mongodb
-
-info "Installing Atom editor's package pre-requisite modules"
-$DOTFILES/atom/reinstall_packages.sh
