@@ -37,7 +37,6 @@ brew install docker-compose
 brew install docker-machine
 brew install docker-machine-driver-xhyve
 brew install docker-machine-nfs
-brew install flow
 brew install highlight
 brew install imagemagick
 brew install mobile-shell
