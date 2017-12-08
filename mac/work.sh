@@ -44,6 +44,9 @@ brew install highlight
 brew install imagemagick
 brew install mobile-shell
 brew install node
-brew install php71
-brew install php71-intl
-brew install php71-mongodb
+brew install php72
+brew install php72-intl
+brew install php72-mongodb
+brew install php72-xdebug
+brew install phpmd
+brew install php-code-sniffer
