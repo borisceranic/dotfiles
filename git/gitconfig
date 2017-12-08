@@ -10,6 +10,8 @@
 	whitespace = trailing-space,space-before-tab,tab-in-indent
 [init]
 	templatedir = ~/.git_template
+[branch]
+	autoSetupRebase = always
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
