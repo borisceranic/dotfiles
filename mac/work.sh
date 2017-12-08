@@ -19,7 +19,6 @@ brew tap homebrew/php
 brew cask install 1password
 brew cask install dropbox
 brew cask install google-chrome
-brew cask install google-cloud-sdk
 brew cask install gpgtools
 brew cask install iterm2
 brew cask install java
