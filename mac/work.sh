@@ -27,7 +27,7 @@ brew cask install keybase
 brew cask install mysqlworkbench
 brew cask install nvalt
 brew cask install postman
-brew cask install robomongo
+brew cask install robo-3t
 brew cask install slack
 brew cask install sourcetree
 brew cask install transmit
