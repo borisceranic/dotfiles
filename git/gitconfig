@@ -8,6 +8,8 @@
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab,tab-in-indent
+[init]
+	templatedir = ~/.git_template
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

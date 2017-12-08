@@ -29,7 +29,9 @@ ln -s $DOTFILES/zsh/zshrc.osx.zsh $HOME/.zshrc.osx.zsh
 ln -s $DOTFILES/zsh/zshrc.linux.zsh $HOME/.zshrc.linux.zsh
 
 echo Installing git files
+mv -f $HOME/.git_template $HOME/$BKUP.git_template
 mv -f $HOME/.gitconfig $HOME/$BKUP.gitconfig
 mv -f $HOME/.gitignore_global $HOME/$BKUP.gitignore_global
+ln -s $DOTFILES/git/git_template $HOME/.git_template
 ln -s $DOTFILES/git/gitconfig $HOME/.gitconfig
 ln -s $DOTFILES/git/gitignore_global $HOME/.gitignore_global
