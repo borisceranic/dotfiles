@@ -31,6 +31,7 @@ brew cask install robomongo
 brew cask install slack
 brew cask install sourcetree
 brew cask install transmit
+brew cask install visual-studio-code
 brew install awscli
 brew install docker
 brew install docker-compose

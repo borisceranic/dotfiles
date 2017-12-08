@@ -4,6 +4,7 @@
 .*.swp
 .*.swo
 .vimprj/
+.vscode/
 build.cmd
 .localized
 xcuserdata/
