@@ -38,8 +38,6 @@ brew install docker-machine
 brew install docker-machine-driver-xhyve
 brew install docker-machine-nfs
 brew install flow
-brew install gnupg2
-brew install gpg-agent
 brew install highlight
 brew install imagemagick
 brew install mobile-shell
