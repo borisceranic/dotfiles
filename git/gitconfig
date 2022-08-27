@@ -1,34 +1,52 @@
 [user]
 	name = Boris Ceranic
 	email = me@sosko.in.rs
-	signingkey = 15DDE55BC7327FB8
 [commit]
-	gpgSign = true
+	gpgSign = false
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab,tab-in-indent
+	pager = /usr/local/bin/smartless
 [init]
 	templatedir = ~/.git_template
+	defaultBranch = master
 [branch]
 	autoSetupRebase = always
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [color]
 	ui = auto
 [push]
 	default = simple
+	followTags = true
+	autoSetupRemote = true
+[log]
+	showSignature = false
+[gpg]
+	program = gpg2
+[hub]
+	protocol = ssh
+[credential "https://github.com"]
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/local/bin/gh auth git-credential
+[rebase]
+	autostash = true
 [alias]
-	vlog = log --graph --date-order --date=relative --pretty=format:\"%C(white)%h: %Cgreen - %an - %Cred %C(cyan)%ar:%Creset%n%s%n\" --color
+	vlog = log --graph --date-order --date=relative --pretty=format:\"%C(white)%h: %C(green)%an %C(reset)- %C(cyan)%ar%C(auto)%d%n%s%n\" --color
 	glog = log --color --pretty=format:\"%G? %h %s (%an %ae, GPG: %GS)\"
+	a = commit --amend
+	b = branch
+	ba = branch --all
 	s = status --short --branch
+	d = diff
+	p = pull
+	dc = diff --cached
+	sw = switch
 	stale = "! abandoned_branches() { \
 		        for branch in `git branch -r --no-merged | grep -v HEAD`; do \
-		            echo `git show --format='%ci %cr %ae' $branch | head -n 1` $branch; \
+		            echo `git show --no-show-signature --format='%ci %cr %ae' $branch | head -n 1` $branch; \
 		        done | sort -r | column -t; \
 		    }; abandoned_branches"
-
+	open-prs = pr list -f '%sC%>(8)%i%Creset% l% t%n'
+	closed-prs = pr list -s closed -f '%sC%>(8)%i%Creset% l% t%n'
+	initial-commit = commit -m 'Initial commit' --allow-empty
