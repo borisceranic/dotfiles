@@ -16,10 +16,6 @@ success "This script will install core programs required to bootstrap"
 success "and configure development and productivity environment on"
 success "this Mac OS X computer."
 echo
-warn "Before continuing, make sure that:"
-error "* XCODE IS INSTALLED!"
-error "* XCODE HAS BEEN RUN AT LEAST ONCE!"
-echo
 warn "Last chance to abort cleanly, by pressing CTRL+C."
 
 read
@@ -34,20 +30,15 @@ if [ ! -x /usr/local/bin/brew ]; then
 	brew tap homebrew/services
 
 	info "Installing brew cask..."
-	brew tap caskroom/cask
-	brew install brew-cask
+	brew tap homebrew/cask
 else
 	warn "Homebrew already installed, skipping installation!"
 fi
 
 ################### INSTALL PACKAGES VIA BREW & CASK #####################
 
-info "Installing: git, vim"
+info "Installing: git"
 brew install git
-brew install vim
-
-info "Installing: gawk"
-brew install gawk
 
 ########################## CLONING & INSTALLING DOTFILES #################
 
