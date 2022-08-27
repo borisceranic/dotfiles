@@ -24,7 +24,7 @@ read
 
 if [ ! -x /usr/local/bin/brew ]; then
 	info "Installing brew..."
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 	info "Installing brew services..."
 	brew tap homebrew/services
