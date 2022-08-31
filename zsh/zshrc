@@ -180,3 +180,4 @@ fi
 
 alias tcol256="terminal-colors --cube-slice --numbers --padding"
 alias grrep="grep -i -r"
+alias bomfind="grep -rlI $'\xEF\xBB\xBF'"
