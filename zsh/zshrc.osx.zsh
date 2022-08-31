@@ -23,3 +23,11 @@ alias routes="netstat -r -n"
 alias flush-dns="sudo killall -HUP mDNSResponder"
 
 alias git=hub
+
+alias ssh-nocare-hostkey="ssh -o PubkeyAuthentication=yes -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+alias ssh-nocare="ssh -o PubkeyAuthentication=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+
+alias docker-hypervisor='docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh'
+
+alias speedtest-sbb-novisad='command -v speedtest || (brew tap teamookla/speedtest; brew install speedtest); speedtest -s 32431'
+alias speedtest-sbb-beograd='command -v speedtest || (brew tap teamookla/speedtest; brew install speedtest); speedtest -s 1301'
