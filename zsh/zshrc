@@ -23,7 +23,6 @@ if [[ -x $highlight_cmd ]]
 then
 	export LESSOPEN="| $highlight_cmd --force --quiet --out-format=truecolor --style=base16/monokai %s"
 fi
-export LESS=' -R '
 
 ## / end of variables
 
