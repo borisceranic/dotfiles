@@ -181,3 +181,9 @@ fi
 alias tcol256="terminal-colors --cube-slice --numbers --padding"
 alias grrep="grep -i -r"
 alias bomfind="grep -rlI $'\xEF\xBB\xBF'"
+
+if [[ -f /usr/local/opt/asdf/libexec/asdf.sh ]]; then
+    . /usr/local/opt/asdf/libexec/asdf.sh
+elif [[ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ]]; then
+    . /opt/homebrew/opt/asdf/libexec/asdf.sh
+fi
