@@ -97,30 +97,61 @@ autoload -U colors
 colors
 # prompt
 # "%{$fg_bold[green]%}%m %{$fg_bold[white]%}%~ %(0?.$fg_bold[green].$fg_bold[red])%?$reset_color %{$fg_bold[yellow]%}%(\!.#.%%) $reset_color"
-fbk="%{$fg_bold[black]%}"
-fre="%{$fg_bold[red]%}"
-fgr="%{$fg_bold[green]%}"
-fye="%{$fg_bold[yellow]%}"
-fbl="%{$fg_bold[blue]%}"
-fma="%{$fg_bold[magenta]%}"
-fcy="%{$fg_bold[cyan]%}"
-fwh="%{$fg_bold[white]%}"
 rst="%{$reset_color%}"
+
+# regular fg colors
+fbk="%{$fg[black]%}"
+fre="%{$fg[red]%}"
+fgr="%{$fg[green]%}"
+fye="%{$fg[yellow]%}"
+fbl="%{$fg[blue]%}"
+fma="%{$fg[magenta]%}"
+fcy="%{$fg[cyan]%}"
+fwh="%{$fg[white]%}"
+
+# bold (bright) fg colors
+
+fbbk="%{$fg_bold[black]%}"
+fbre="%{$fg_bold[red]%}"
+fbgr="%{$fg_bold[green]%}"
+fbye="%{$fg_bold[yellow]%}"
+fbbl="%{$fg_bold[blue]%}"
+fbma="%{$fg_bold[magenta]%}"
+fbcy="%{$fg_bold[cyan]%}"
+fbwh="%{$fg_bold[white]%}"
+
+bbk="%{$bg[black]%}"
 
 prompt=""
 # hostname
+#backup with bright colors!
+#prompt+="%(0#,$fbre,$fbgr)%n$fbgr@%m$rst "
 prompt+="%(0#,$fre,$fgr)%n$fgr@%m$rst "
 
 # path
-prompt+="$fbl%5~$rst "
+setopt prompt_subst
+#prompt+="$fbbl%3~$rst "
+prompt+="$fcy\$(shrink_path -t -l)$rst "
 
 # exit code of last command
-prompt+="%(0?,,$fre%?$rst )"
+#prompt+="%(0?,,$fbre%?$rst )"
+#prompt+="%(0?,,$fre%?$rst )"
+
+# git branch info, format the vcs_info_msg_0_ variable
+# load vcs info plugin
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats "($fgr%b$rst) "
+prompt+="\$vcs_info_msg_0_"
 
 # prompt symbol
-prompt+="%(!.$fcy#.$fye%%)$rst "
+#prompt+="%(!.$fbcy#.$fbye%%)$rst "
+prompt+="%(!.$fre#.$fma%%)$rst "
 
 export PROMPT
+
+
+#export RPROMPT=\$vcs_info_msg_0_
 
 ## OS-specific configuration and overrides
 if [[ `uname` == 'Linux' ]]
