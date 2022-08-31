@@ -1,5 +1,5 @@
 # path customization
-path=("$HOME/sbin" "$HOME/.composer/vendor/bin" $path)
+path=("/usr/local/sbin" "$HOME/sbin" "$HOME/go/bin" "$HOME/.composer/vendor/bin" "$HOME/.local/bin" $path)
 export PATH
 
 # homebrew cask default options
