@@ -85,6 +85,10 @@ bindkey "^H" backward-delete-char
 bindkey "^W" backward-kill-word
 # ctrl+u
 bindkey "^U" backward-kill-line
+# home
+bindkey "${terminfo[khome]}" beginning-of-line
+# end
+bindkey "${terminfo[kend]}" end-of-line
 
 # numpad enter...
 bindkey -s "^[OM" "^M"
