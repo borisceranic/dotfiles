@@ -25,6 +25,11 @@ read
 if [ ! -x /usr/local/bin/brew ]; then
 	info "Installing brew..."
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	if [ -d /opt/homebrew ]; then
+		eval "$(/opt/homebrew/bin/brew shellenv)"
+	else
+		eval "$(/usr/local/bin/brew shellenv)"
+	fi
 
 	info "Installing brew services..."
 	brew tap homebrew/services
