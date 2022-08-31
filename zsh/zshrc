@@ -15,10 +15,13 @@ export LANG=en_US.UTF-8
 export KEYTIMEOUT=1
 
 # less config
-highlight_cmd=`which highlight`
-if [[ $? -eq 0 ]]
+highlight_cmd='/usr/local/bin/highlight'
+if [[ -d '/opt/homebrew' ]]; then
+	highlight_cmd='/opt/homebrew/bin/highlight'
+fi
+if [[ -x $highlight_cmd ]]
 then
-	export LESSOPEN="| $highlight_cmd --failsafe --quiet --out-format=xterm256 %s"
+	export LESSOPEN="| $highlight_cmd --force --quiet --out-format=truecolor --style=base16/monokai %s"
 fi
 export LESS=' -R '
 
