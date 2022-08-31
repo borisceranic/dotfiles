@@ -2,6 +2,10 @@
 path=("/usr/local/sbin" "$HOME/sbin" "$HOME/go/bin" "$HOME/.composer/vendor/bin" "$HOME/.local/bin" $path)
 export PATH
 
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+gpgconf --launch gpg-agent
+
 # homebrew cask default options
 export HOMEBREW_GITHUB_API_TOKEN=""
 export HOMEBREW_NO_ANALYTICS=1
