@@ -14,7 +14,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export CLICOLOR=1
 export LSCOLORS="ExGxFxDxCxDxDxhbhdacEc"
 
-alias brew-upgrade="brew upgrade; brew cleanup; brew cask cleanup; brew doctor; brew missing; brew cask outdated"
+alias brew-upgrade='brew update; TO_UPGRADE=`brew upgrade --formula --dry-run --quiet`; brew upgrade --formulae; brew cleanup; brew doctor; brew missing; echo $TO_UPGRADE; brew upgrade --casks --dry-run'
 alias ports="netstat -p tcp -a -n | grep LISTEN "
 alias routes="netstat -r -n"
 alias flush-dns="sudo killall -HUP mDNSResponder"
