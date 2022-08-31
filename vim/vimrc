@@ -49,6 +49,7 @@ Plugin 'tomasr/molokai'
 Plugin 'dhruvasagar/vim-vinegar'
 Plugin 'rking/ag.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'rizzatti/dash.vim'
 
 " change/add surrounding characters
 Plugin 'tpope/vim-surround'
@@ -68,7 +69,6 @@ Plugin 'dahu/vim-fanfingtastic'
 Plugin 'fholgado/minibufexpl.vim'
 
 " git
-Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'int3/vim-extradite'
@@ -79,26 +79,10 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'beyondwords/vim-twig'
 
-" web-related
-Plugin 'tpope/vim-haml'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'wavded/vim-stylus'
-
 " provisioning, automation, cfg mgmt...
 Plugin 'markcornick/vim-vagrant'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'chase/vim-ansible-yaml'
-
-" snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-
-" erlang
-Plugin 'jimenezrick/vimerl'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'carlosgaldino/elixir-snippets'
 
 " various syntax validation
 Plugin 'scrooloose/syntastic'
@@ -110,8 +94,13 @@ Plugin 'plasticboy/vim-markdown'
 " javascript
 Plugin 'pangloss/vim-javascript'
 
+" golang
+Plugin 'fatih/vim-go'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+syntax on
 
 set showcmd
 
@@ -151,7 +140,7 @@ set incsearch
 set ignorecase
 set smartcase
 
-set textwidth=78
+set textwidth=72
 let g:HiMtchBrktOn=1
 
 set scrolloff=3
@@ -244,3 +233,5 @@ map <Down> :echo "Say NO to arrows! Motion keys FTW: h j k l"<cr>
 " reformat "text - something" to "* **text** -- something"
 nmap <Leader>1 ^i* **ea**ea-^
 
+" fixme - remove after upgrading vim to sufficiently recent version
+let g:go_version_warning = 0
